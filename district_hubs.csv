@@ -1,0 +1,59 @@
+district,name,address,phone,type
+Hubballi,"District Social Welfare Office, Hubballi","Welfare Bhavan, Lamington Road, Hubballi – 580020",0836-2362233,Social Welfare
+Hubballi,Dharwad District Collectorate,"DC Office Campus, Dharwad – 580008",0836-2747700,Revenue / Collectorate
+Hubballi,KSRTC Namma Seva Kendra,"KSRTC Bus Stand Complex, Hubballi – 580020",0836-2256099,Citizen Service Centre
+Hubballi,PMEGP District Industries Centre,"DIC Building, Koppikar Road, Hubballi",0836-2362555,Employment / MSME
+Dharwad,District Collectorate Dharwad,"DC Office, P.B. Road, Dharwad – 580008",0836-2747700,Revenue / Collectorate
+Dharwad,Taluk Social Welfare Office,"Near Bus Stand, Dharwad",0836-2440100,Social Welfare
+Dharwad,Seva Sindhu Centre – Dharwad,"CMC Complex, Dharwad",080-44554455,Citizen Service Centre
+Bengaluru,BBMP Citizen Service Centre,"BBMP Head Office, N.R. Square, Bengaluru – 560002",080-22660000,Municipal / Citizen Services
+Bengaluru,District Social Welfare Office,"Kendriya Sadan, Koramangala, Bengaluru",080-25530887,Social Welfare
+Bengaluru,Atal Jan Seva Kendra (CSC),Indira Nagar / Jayanagar / Rajajinagar,1800-121-3468,Citizen Service Centre
+Bengaluru,"District Collectorate, Bengaluru","SSLR Building, Race Course Road – 560001",080-22353506,Revenue / Collectorate
+Mysuru,"District Collectorate, Mysuru","DC Office, JLB Road, Mysuru – 570001",0821-2420201,Revenue / Collectorate
+Mysuru,District Social Welfare Office,"Welfare Building, Saraswathipuram, Mysuru",0821-2561234,Social Welfare
+Mysuru,Seva Sindhu Kendra – Mysuru,"KHB Colony, Kuvempunagar, Mysuru",080-44554455,Citizen Service Centre
+Belagavi,"District Collectorate, Belagavi","DC Office, Club Road, Belagavi – 590001",0831-2422001,Revenue / Collectorate
+Belagavi,District Social Welfare Office,"Near Old Bus Stand, Belagavi",0831-2426100,Social Welfare
+Belagavi,CSC – Common Service Centre,"Smart City Office, Belagavi",1800-121-3468,Citizen Service Centre
+Mumbai,"District Collector Office, Mumbai City","CST Road, Mantralaya Complex, Mumbai – 400032",022-22025050,Revenue / Collectorate
+Mumbai,Aaple Sarkar Service Centre,"BMC Head Office, CST Road, Mumbai",1800-120-8040,Citizen Service Centre
+Mumbai,District Social Welfare Office,"Bandra East, Mumbai – 400051",022-26592010,Social Welfare
+Mumbai,MSME Development Institute,"Kurla-Andheri Road, Saki Naka, Mumbai – 400072",022-28521380,Employment / MSME
+Pune,"District Collectorate, Pune","Collector Office, Shivajinagar, Pune – 411005",020-25507100,Revenue / Collectorate
+Pune,Aaple Sarkar Seva Kendra – Pune,"Near Swargate Bus Stand, Pune",1800-120-8040,Citizen Service Centre
+Pune,District Social Welfare Office,"Near Sassoon General Hospital, Pune",020-26130150,Social Welfare
+Chennai,"District Collectorate, Chennai","Rajaji Salai, Chennai – 600001",044-25672345,Revenue / Collectorate
+Chennai,Tamil Nadu Social Welfare Board,"DMS Campus, Park Town, Chennai – 600003",044-28413333,Social Welfare
+Chennai,Amma Unavagam / Namma Chennai Kendra,"Ripon Building, Chennai – 600003",044-25384649,Citizen Service Centre
+Chennai,MSME DIC – Chennai,"Anna Salai, Chennai – 600002",044-28521790,Employment / MSME
+Hyderabad,"District Collectorate, Hyderabad","Hyderabad Collectorate, Nampally – 500001",040-24601124,Revenue / Collectorate
+Hyderabad,MeeSeva Centre – Hyderabad,"Abids, Hyderabad",1800-425-1110,Citizen Service Centre
+Hyderabad,Social Welfare Office,"Masab Tank, Hyderabad",040-23310044,Social Welfare
+Lucknow,"District Collectorate, Lucknow","Collector Ganj, Civil Lines, Lucknow – 226001",0522-2610297,Revenue / Collectorate
+Lucknow,Uttar Pradesh Seva Kendra,"Lalbagh, Lucknow",1800-180-5145,Citizen Service Centre
+Lucknow,District Social Welfare Office,"Vidhan Sabha Marg, Lucknow",0522-2612234,Social Welfare
+New Delhi,"Revenue Divisional Office, New Delhi","Tis Hazari Courts, Delhi – 110054",011-23890099,Revenue / Collectorate
+New Delhi,Delhi Seva Kendra,"Pragati Maidan Area, New Delhi",011-23370011,Citizen Service Centre
+New Delhi,Delhi Social Welfare Department,"GLNS Complex, ITO, New Delhi – 110002",011-23392012,Social Welfare
+Kolkata,"District Collectorate, Kolkata","1 Kiran Shankar Roy Road, Kolkata – 700001",033-22480950,Revenue / Collectorate
+Kolkata,Duare Sarkar Camp Centre,"Salt Lake Stadium, Sector V, Kolkata",1800-345-5555,Citizen Service Centre
+Kolkata,District Social Welfare Officer,"Nizam Palace, AJC Bose Road, Kolkata",033-22813211,Social Welfare
+Patna,"District Collectorate, Patna","Collectorate Building, Bailey Road, Patna – 800001",0612-2215561,Revenue / Collectorate
+Patna,Lok Seva Kendra – Patna,"Near GPO, Fraser Road, Patna",1800-3456-145,Citizen Service Centre
+Patna,District Social Welfare Office,"Dak Bunglow Road, Patna",0612-2226543,Social Welfare
+Bhopal,"District Collectorate, Bhopal","Arera Hills, Bhopal – 462011",0755-2441600,Revenue / Collectorate
+Bhopal,MP Lok Seva Kendra,"TT Nagar, Bhopal",1800-233-1956,Citizen Service Centre
+Bhopal,District Social Welfare Office,"Shyamala Hills, Bhopal",0755-2660123,Social Welfare
+Jaipur,"District Collectorate, Jaipur","Civil Lines, Jaipur – 302006",0141-2227421,Revenue / Collectorate
+Jaipur,Jan Soochna Portal Helpdesk,"Secretariat, Jaipur",1800-180-6127,Citizen Service Centre
+Jaipur,District Social Welfare Office,"Near Sanganer, Jaipur",0141-2703555,Social Welfare
+Ahmedabad,"District Collectorate, Ahmedabad","Collectorate Campus, Dudheshwar – 380001",079-25505000,Revenue / Collectorate
+Ahmedabad,Atal Seva Kendra / e-Gram Centre,"Bapunagar, Ahmedabad",1800-233-5500,Citizen Service Centre
+Ahmedabad,District Social Defence Office,"Near Sola Civil Hospital, Ahmedabad",079-27455020,Social Welfare
+Thiruvananthapuram,District Collectorate,"Collectorate Campus, Thiruvananthapuram – 695001",0471-2730870,Revenue / Collectorate
+Thiruvananthapuram,Akshaya Centre,"Palayam, Thiruvananthapuram",0471-2332200,Citizen Service Centre
+Thiruvananthapuram,District Social Welfare Office,"Vazhuthacaud, Thiruvananthapuram",0471-2725400,Social Welfare
+DEFAULT,District Collectorate / DC Office,Contact local District Collector for exact address,1916 (Govt helpline),Revenue / Collectorate
+DEFAULT,Common Service Centre (CSC),Nearest Gram Panchayat or CSC centre,1800-121-3468 (toll-free),Citizen Service Centre
+DEFAULT,District Social Welfare Office,Near District HQ / Civil Lines area,Contact District Collector office,Social Welfare

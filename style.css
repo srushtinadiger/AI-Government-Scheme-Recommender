@@ -1,0 +1,564 @@
+/* ══════════════════════════════════════════════════════════════
+   AI Government Scheme Recommender — Stylesheet
+   Dark teal theme matching the original design
+   ══════════════════════════════════════════════════════════════ */
+
+@import url('https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;500;600;700&display=swap');
+
+:root {
+  --bg:        #0f2233;
+  --card:      #132a3e;
+  --card2:     #1a3650;
+  --border:    #1e4060;
+  --accent:    #e8a020;
+  --accent2:   #f0c040;
+  --teal:      #2dd4bf;
+  --text:      #d4e8f5;
+  --muted:     #6b8fa8;
+  --high:      #22c55e;
+  --medium:    #f59e0b;
+  --low:       #3b82f6;
+  --input-bg:  #0d1f2f;
+  --radius:    10px;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  font-size: 15px;
+  min-height: 100vh;
+}
+
+/* ── HEADER ── */
+header {
+  background: var(--card);
+  border-bottom: 1px solid var(--border);
+  padding: 18px 32px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.header-icon {
+  font-size: 32px;
+}
+
+header h1 {
+  color: var(--accent);
+  font-size: 22px;
+  font-weight: 700;
+}
+
+header p {
+  color: var(--muted);
+  font-size: 13px;
+  margin-top: 2px;
+}
+
+/* ── MAIN ── */
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 28px 20px 60px;
+}
+
+/* ── CARD ── */
+.card {
+  background: var(--card);
+  border-radius: var(--radius);
+  padding: 28px 32px;
+  border: 1px solid var(--border);
+}
+
+.card-title h2 {
+  color: var(--accent);
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.card-title .subtitle {
+  color: var(--muted);
+  font-size: 13px;
+  margin-top: 4px;
+  margin-bottom: 24px;
+}
+
+/* ── FORM ── */
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+
+.form-group.full-width {
+  grid-column: 1 / -1;
+}
+
+label {
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.required { color: var(--accent); }
+.optional { color: var(--muted); font-weight: 400; }
+
+input[type="text"],
+input[type="number"],
+select {
+  background: var(--input-bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--text);
+  font-size: 14px;
+  padding: 11px 14px;
+  outline: none;
+  transition: border-color 0.2s;
+  width: 100%;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+input::placeholder { color: var(--muted); }
+
+input:focus, select:focus {
+  border-color: var(--accent);
+}
+
+select {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%236b8fa8' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+  padding-right: 36px;
+  cursor: pointer;
+}
+
+select option {
+  background: var(--card2);
+  color: var(--text);
+}
+
+/* ── DIVIDER ── */
+.divider {
+  height: 1px;
+  background: var(--border);
+  margin: 20px 0;
+}
+
+/* ── CHECKBOXES ── */
+.checkbox-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 4px;
+}
+
+.checkbox-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--card2);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 12px 16px;
+  cursor: pointer;
+  transition: all 0.2s;
+  user-select: none;
+}
+
+.checkbox-card:hover {
+  border-color: var(--accent);
+}
+
+.checkbox-card input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--accent);
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.checkbox-card input[type="checkbox"]:checked ~ span {
+  color: var(--text);
+}
+
+.checkbox-card:has(input:checked) {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #0f2233;
+}
+
+.checkbox-card:has(input:checked) span {
+  color: #0f2233 !important;
+}
+
+.cb-icon { font-size: 18px; }
+
+/* ── SUBMIT BUTTON ── */
+.btn-submit {
+  width: 100%;
+  padding: 14px;
+  background: var(--accent);
+  color: #0f2233;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+  margin-top: 8px;
+}
+
+.btn-submit:hover {
+  background: var(--accent2);
+  transform: translateY(-1px);
+}
+
+.btn-submit:active { transform: translateY(0); }
+
+.btn-submit:disabled {
+  background: var(--border);
+  color: var(--muted);
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* ── LOADING OVERLAY ── */
+.loading-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 34, 51, 0.85);
+  z-index: 999;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.loading-overlay.show { display: flex; }
+
+.spinner {
+  width: 48px;
+  height: 48px;
+  border: 4px solid var(--border);
+  border-top-color: var(--accent);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin { to { transform: rotate(360deg); } }
+
+.loading-text {
+  color: var(--text);
+  font-size: 16px;
+}
+
+/* ── SUMMARY BAR ── */
+.summary-bar {
+  background: var(--card2);
+  border-radius: var(--radius);
+  padding: 18px 24px;
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 12px;
+  border: 1px solid var(--border);
+}
+
+.summary-bar h2 {
+  color: var(--accent);
+  font-size: 20px;
+}
+
+.summary-meta {
+  color: var(--muted);
+  font-size: 13px;
+  margin-top: 4px;
+}
+
+.summary-pills {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.pill {
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.pill.high   { background: rgba(34,197,94,0.15);  color: var(--high); }
+.pill.medium { background: rgba(245,158,11,0.15); color: var(--medium); }
+.pill.low    { background: rgba(59,130,246,0.15); color: var(--low); }
+.pill.total  { background: var(--border); color: var(--text); }
+
+/* ── GROUP HEADERS ── */
+.group-header {
+  font-size: 12px;
+  font-weight: 700;
+  padding: 5px 14px;
+  border-radius: 4px;
+  display: inline-block;
+  margin: 20px 0 10px;
+}
+
+.high-header   { background: var(--high);   color: #0f2233; }
+.medium-header { background: var(--medium); color: #0f2233; }
+.low-header    { background: var(--low);    color: #fff; }
+
+/* ── SCHEME CARD ── */
+.scheme-card {
+  display: flex;
+  background: var(--card);
+  border-radius: var(--radius);
+  margin-bottom: 10px;
+  border: 1px solid var(--border);
+  overflow: hidden;
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.scheme-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+
+.scheme-bar {
+  width: 5px;
+  flex-shrink: 0;
+}
+
+.scheme-card.high   .scheme-bar { background: var(--high); }
+.scheme-card.medium .scheme-bar { background: var(--medium); }
+.scheme-card.low    .scheme-bar { background: var(--low); }
+
+.scheme-body {
+  padding: 14px 18px;
+  flex: 1;
+}
+
+.scheme-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 4px;
+}
+
+.scheme-name {
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--text);
+  flex: 1;
+}
+
+.match-badge {
+  font-size: 12px;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.match-badge.high   { background: var(--high);   color: #0f2233; }
+.match-badge.medium { background: var(--medium); color: #0f2233; }
+.match-badge.low    { background: var(--low);    color: #fff; }
+
+.scheme-meta {
+  color: var(--muted);
+  font-size: 12px;
+  margin-bottom: 6px;
+}
+
+.scheme-benefit {
+  color: var(--text);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+/* ── EXPANDABLE DETAILS ── */
+.scheme-details {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+}
+
+.detail-section { margin-bottom: 10px; }
+
+.detail-label {
+  color: var(--teal);
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.detail-item {
+  color: var(--text);
+  font-size: 13px;
+  padding: 2px 0 2px 12px;
+  line-height: 1.5;
+}
+
+.toggle-btn {
+  background: none;
+  border: none;
+  color: var(--accent);
+  font-size: 13px;
+  cursor: pointer;
+  padding: 8px 0 0;
+  transition: color 0.2s;
+}
+
+.toggle-btn:hover { color: var(--accent2); }
+
+/* ── HUB CARDS ── */
+.section-title {
+  color: var(--accent);
+  font-size: 18px;
+  font-weight: 700;
+  margin: 8px 0 14px;
+}
+
+.hub-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px 20px;
+  margin-bottom: 10px;
+}
+
+.hub-type {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  color: #0f2233;
+}
+
+.hub-revenue---collectorate   { background: #6366f1; color: #fff; }
+.hub-citizen-service-centre   { background: var(--teal); }
+.hub-social-welfare           { background: #ec4899; color: #fff; }
+.hub-employment---msme        { background: var(--medium); }
+.hub-municipal---citizen-services { background: var(--teal); }
+.hub-health---pharma          { background: var(--high); }
+.hub-skill-development        { background: #a855f7; color: #fff; }
+
+.hub-name    { font-weight: 600; font-size: 15px; margin-bottom: 4px; }
+.hub-address { color: var(--muted); font-size: 13px; margin-bottom: 3px; }
+.hub-phone   { color: var(--teal);  font-size: 13px; }
+
+/* ── RESULT FOOTER ── */
+.result-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 28px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+}
+
+.result-footer p { color: var(--muted); font-size: 13px; }
+
+.btn-back {
+  background: var(--card2);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.btn-back:hover { background: var(--accent); color: #0f2233; }
+
+/* ── NO RESULTS ── */
+.no-results {
+  text-align: center;
+  padding: 60px 20px;
+  color: var(--muted);
+  font-size: 18px;
+}
+
+.no-results a { margin-top: 20px; display: inline-block; }
+
+/* ── FOOTER ── */
+footer {
+  text-align: center;
+  padding: 20px;
+  color: var(--muted);
+  font-size: 12px;
+  border-top: 1px solid var(--border);
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 600px) {
+  .form-row        { grid-template-columns: 1fr; }
+  .checkbox-grid   { grid-template-columns: 1fr; }
+  .summary-bar     { flex-direction: column; }
+  .result-footer   { flex-direction: column; text-align: center; }
+  .card            { padding: 20px 16px; }
+  header           { padding: 14px 16px; }
+  header h1        { font-size: 17px; }
+}
+/* ── Scheme card action row ── */
+.scheme-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+/* Apply Now button */
+a.apply-btn {
+  display: inline-block;
+  padding: 6px 16px;
+  border-radius: 6px;
+  background: #1a73e8;
+  color: #fff;
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: 0.02em;
+  transition: background 0.18s, transform 0.12s;
+  white-space: nowrap;
+}
+
+a.apply-btn:hover {
+  background: #1558b0;
+  transform: translateY(-1px);
+}
+
+a.apply-btn:active {
+  transform: translateY(0);
+}

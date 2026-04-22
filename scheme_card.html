@@ -1,0 +1,44 @@
+<div class="scheme-card {{ s.priority | lower }}">
+  <div class="scheme-bar"></div>
+  <div class="scheme-body">
+
+    <div class="scheme-top">
+      <div class="scheme-name">{{ s.name }}</div>
+      <span class="match-badge {{ s.priority | lower }}">{{ s.match }}%</span>
+    </div>
+
+    <div class="scheme-meta">
+      {{ s.ministry }} &nbsp;·&nbsp; {{ s.category }} &nbsp;·&nbsp;
+      Age {{ s.age_min }}–{{ s.age_max }} yrs
+    </div>
+
+    <div class="scheme-benefit">{{ s.benefit }}</div>
+
+    <!-- Expandable section -->
+    <div class="scheme-details" id="details-{{ s.id }}" style="display:none;">
+      <div class="detail-section">
+        <div class="detail-label">📋 Required Documents:</div>
+        {% for doc in s.documents %}
+        <div class="detail-item">• {{ doc }}</div>
+        {% endfor %}
+      </div>
+      <div class="detail-section">
+        <div class="detail-label">📅 Last Date / Deadline:</div>
+        <div class="detail-item">{{ s.last_date }}</div>
+      </div>
+    </div>
+
+    <div class="scheme-actions">
+  <button class="toggle-btn" onclick="toggleDetails('{{ s.id }}', this)">
+    ▼ &nbsp;Show Documents & Deadline
+  </button>
+  <a class="apply-btn"
+     href="{{ s.url }}"
+     target="_blank"
+     rel="noopener noreferrer">
+    Apply Now →
+  </a>
+</div>
+
+  </div>
+</div>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Results — AI Scheme Recommender</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"/>
+</head>
+<body>
+
+  <!-- ── HEADER ── -->
+  <header>
+    <div class="header-inner">
+      <div class="header-icon">🏛</div>
+      <div>
+        <h1>AI Government Scheme Recommender</h1>
+        <p>Find all Central government schemes you are eligible for</p>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ── SUMMARY BAR ── -->
+    <div class="summary-bar">
+      <div class="summary-left">
+        <h2>Results for {{ profile.name }}</h2>
+        <p class="summary-meta">
+          Age {{ profile.age }} &nbsp;·&nbsp;
+          {{ profile.gender }} &nbsp;·&nbsp;
+          {{ profile.occupation | title }} &nbsp;·&nbsp;
+          {{ profile.district }}, {{ profile.state }}
+        </p>
+      </div>
+      <div class="summary-pills">
+        <span class="pill high">● HIGH &nbsp;{{ high | length }}</span>
+        <span class="pill medium">● MEDIUM &nbsp;{{ medium | length }}</span>
+        <span class="pill low">● LOW &nbsp;{{ low | length }}</span>
+        <span class="pill total">{{ total }} schemes found</span>
+      </div>
+    </div>
+
+    {% if total == 0 %}
+    <div class="no-results">
+      <p>😕 No matching schemes found for your profile.</p>
+      <a href="/" class="btn-back">← Try Again</a>
+    </div>
+
+    {% else %}
+
+    <!-- ── HIGH PRIORITY ── -->
+    {% if high %}
+    <div class="group-header high-header">HIGH PRIORITY &nbsp;({{ high | length }})</div>
+    {% for s in high %}
+    {% include 'scheme_card.html' %}
+    {% endfor %}
+    {% endif %}
+
+    <!-- ── MEDIUM PRIORITY ── -->
+    {% if medium %}
+    <div class="group-header medium-header">MEDIUM PRIORITY &nbsp;({{ medium | length }})</div>
+    {% for s in medium %}
+    {% include 'scheme_card.html' %}
+    {% endfor %}
+    {% endif %}
+
+    <!-- ── LOW PRIORITY ── -->
+    {% if low %}
+    <div class="group-header low-header">LOW PRIORITY &nbsp;({{ low | length }})</div>
+    {% for s in low %}
+    {% include 'scheme_card.html' %}
+    {% endfor %}
+    {% endif %}
+
+    {% endif %}
+
+    <!-- ── DISTRICT HUBS ── -->
+    <div class="divider"></div>
+    <h3 class="section-title">📍 Enquiry Hubs — {{ profile.district }}, {{ profile.state }}</h3>
+
+    {% for hub in hubs %}
+    <div class="hub-card">
+      <span class="hub-type hub-{{ hub.type | lower | replace(' ', '-') | replace('/', '') }}">
+        {{ hub.type }}
+      </span>
+      <div class="hub-name">{{ hub.name }}</div>
+      <div class="hub-address">📌 {{ hub.address }}</div>
+      <div class="hub-phone">📞 {{ hub.phone }}</div>
+    </div>
+    {% endfor %}
+
+    <!-- ── FOOTER ACTIONS ── -->
+    <div class="result-footer">
+      <p>Apply online: myscheme.gov.in &nbsp;·&nbsp; services.india.gov.in &nbsp;·&nbsp; Helpline: 1916</p>
+      <a href="/" class="btn-back">← New Search</a>
+    </div>
+
+  </main>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
