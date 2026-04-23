@@ -31,6 +31,38 @@ datasets:
 - embedding-data/WikiAnswers
 pipeline_tag: sentence-similarity
 ---
+# 🇮🇳 AI Government Scheme Finder
+
+Making government schemes accessible, understandable, and reachable for every citizen.
+
+This AI-powered web application helps users discover the most relevant Indian government schemes based on their personal profile — using a simple chat interface with voice or text input.
+
+## 📖 About the Project
+
+Millions of people in India are unaware of government schemes they are eligible for due to lack of awareness, complex processes, and language barriers.
+
+This project aims to bridge that gap by providing a simple, intelligent, and multilingual interface where users can:
+
+- Answer a few easy questions
+- Speak in their preferred language
+- Instantly get personalized scheme recommendations
+
+The application uses a structured questionnaire and intelligent matching logic to suggest schemes based on:
+
+- Age
+- Income
+- Occupation
+- State
+- Social category
+- Other eligibility factors
+
+Additionally, user responses are stored in Google Sheets for analysis — without requiring a backend server.
+
+---
+
+### 🎯 Goal
+
+To make government benefits more accessible, especially for rural and underserved communities, through technology and simplicity.
 
 
 # all-MiniLM-L6-v2
@@ -93,38 +125,6 @@ print(sentence_embeddings)
 ```
 
 ------
-# 🇮🇳 AI Government Scheme Finder
-
-Making government schemes accessible, understandable, and reachable for every citizen.
-
-This AI-powered web application helps users discover the most relevant Indian government schemes based on their personal profile — using a simple chat interface with voice or text input.
-
-## 📖 About the Project
-
-Millions of people in India are unaware of government schemes they are eligible for due to lack of awareness, complex processes, and language barriers.
-
-This project aims to bridge that gap by providing a simple, intelligent, and multilingual interface where users can:
-
-- Answer a few easy questions
-- Speak in their preferred language
-- Instantly get personalized scheme recommendations
-
-The application uses a structured questionnaire and intelligent matching logic to suggest schemes based on:
-
-- Age
-- Income
-- Occupation
-- State
-- Social category
-- Other eligibility factors
-
-Additionally, user responses are stored in Google Sheets for analysis — without requiring a backend server.
-
----
-
-### 🎯 Goal
-
-To make government benefits more accessible, especially for rural and underserved communities, through technology and simplicity.
 
 ## Background
 
